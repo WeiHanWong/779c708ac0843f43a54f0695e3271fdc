@@ -7,8 +7,8 @@
 **Windows**
           
 ```bash
-git clone https://github.com/Dev-Elie/User-Authentication-in-Flask.git
-cd User-Authentication-in-Flask
+git clone https://github.com/WeiHanWong/779c708ac0843f43a54f0695e3271fdc.git
+cd 779c708ac0843f43a54f0695e3271fdc
 py -3 -m venv venv
 
 ```
