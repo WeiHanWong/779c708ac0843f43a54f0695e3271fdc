@@ -44,16 +44,6 @@ pip install -r requirements.txt
 
 ### 4. Run the application 
 
-**For linux and macOS**
-Make the run file executable by running the code
-
-```chmod 777 run```
-
-Then start the application by executing the run file
-
-```./run```
-
-**On windows**
 ```
 flask run
 ```
