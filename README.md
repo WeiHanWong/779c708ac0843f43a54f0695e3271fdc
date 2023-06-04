@@ -57,3 +57,13 @@ Then start the application by executing the run file
 ```
 flask run
 ```
+### 5. Login 
+
+**Admin Credentials**
+Username
+
+```will```
+
+Password
+
+```password```
