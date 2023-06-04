@@ -1,4 +1,4 @@
-# User-Authentication-in-Flask
+# WatchDog
 
 ## Set up & Installation.
 
