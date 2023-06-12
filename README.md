@@ -4,6 +4,7 @@
 
 ```bash
 sudo apt install postgresql
+sudo apt-get install bluetooth libbluetooth-dev
 sudo -i -u postgres
 psql
 \password
