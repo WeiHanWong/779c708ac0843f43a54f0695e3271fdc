@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block title %} Create Area {% endblock %}
+
+{% block nav %}
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="{{url_for('dashboard')}}">Dashboard</a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link" href="{{url_for('map')}}">Interactive Map</a>
+        </li>
+        <li class="nav-item">
+              <a class="nav-link" href="{{url_for('test')}}">API TEST</a>
+        </li>
+    </ul>
+    <form class="d-flex" role="search">
+        <a class="btn btn-outline-success" href="{{url_for('logout')}}">Logout</a>
+    </form>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Create Area</h2>
+
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            <label for="name">Name:</label>
+            {{ form.name(class="form-control") }}
+        <br>
+            <label for="arssi1n">Boundary1 Probe1:</label>
+            {{ form.arssi1n(class="form-control") }}
+        <br>
+            <label for="arssi1s">Boundary2 Probe1:</label>
+            {{ form.arssi1s(class="form-control") }}
+        <br>
+            <label for="arssi1e">Boundary3 Probe1:</label>
+            {{ form.arssi1e(class="form-control") }}
+        <br>
+            <label for="arssi1w">Boundary4 Probe1:</label>
+            {{ form.arssi1w(class="form-control") }}
+        <br>
+            <label for="arssi2n">Boundary1 Probe2:</label>
+            {{ form.arssi2n(class="form-control") }}
+        <br>
+            <label for="arssi2s">Boundary2 Probe2:</label>
+            {{ form.arssi2s(class="form-control") }}
+        <br>
+            <label for="arssi2e">Boundary3 Probe2:</label>
+            {{ form.arssi2e(class="form-control") }}
+        <br>
+            <label for="arssi2w">Boundary4 Probe2:</label>
+            {{ form.arssi2w(class="form-control") }}
+        <br>
+            <label for="arssi3n">Boundary1 Probe3:</label>
+            {{ form.arssi3n(class="form-control") }}
+        <br>
+            <label for="arssi3s">Boundary2 Probe3:</label>
+            {{ form.arssi3s(class="form-control") }}
+        <br>
+            <label for="arssi3e">Boundary3 Probe3:</label>
+            {{ form.arssi3e(class="form-control") }}
+        <br>
+            <label for="arssi3w">Boundary4 Probe3:</label>
+            {{ form.arssi3w(class="form-control") }}
+        </div>
+        <br>
+        {{ form.submit(class="btn btn-primary") }}
+    </form>
+</div>
+{% endblock %}
